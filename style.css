@@ -1,0 +1,25 @@
+body{width:900px;height:500px;
+position:absolute;left:30px;top:50px;}
+
+#par1{position:absolute;left:50px;top:50px;transform:rotate(10deg);border:dotted 5px green;}
+
+#img1{position:absolute;width:120px;height:80px;border:dashed violet 10px;}
+
+#img7{position:absolute;top: 330px;width:10px;height:20px;border:solid red 1px;}
+
+#img5{position:absolute;width:50px;height:50px;border:dashed green 5px;}
+
+#addPic{position:absolute;left:950px;top:10px;border:dashed 5px blue;}
+	
+#par3{position:absolute;border:dotted 5px green;}
+
+#snow{position:absolute;left:950px;top:50px;border:dashed 5px blue;}
+	
+
+	
+#div2{width:200px;height:70px;position:absolute;left:950px;top:90px;border:dashed 5px blue;}
+
+#div1{width:200px;height:300px;position:absolute;left:950px;top:180px;border:dashed 5px green;}
+	
+	
+

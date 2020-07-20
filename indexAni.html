@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Animate</title>
+<a href="index.html">back to just html</a>
+<br>
+<style>
+body{background-color:blue;}
+
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;top:20px;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  
+}
+#pic1{position:absolute;left:500px;width:400px;height:400px;top:100px;border:green groove 30px;}
+</style>
+<img id="pic1" src="cowpic1.jpg">
+<body>
+ <br>
+ <button onclick="myStopFunction()">Stop time</button>
+<button onclick="myStartFunction()">Start time</button>
+<br>
+<p id="demo"></p>
+<button onclick="startBox()">Start Box</button> 
+<button onclick="stopBox()">Stop Box</button> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+let pic=document.getElementById("pic1");
+let j=0;
+
+  var box = document.getElementById("animate");   
+  let con = document.getElementById("container");
+  var pos = 0;var id;// = setInterval(frame, 100);
+function startBox() {
+  id=setInterval(frame,100);
+  con.style.border="dashed red 12px";
+  pic.src="cowpic"+j%7+".jpg";
+  j++;
+  con.style.top="40px";
+  con.style.backgroundColor="blue;";
+  //clearInterval(id);
+}
+
+function frame() {
+    if (pos >= 250) {pos=0;
+      clearInterval(id);//stops the animation
+    } else {
+      pos++; 
+	  box.style.backgroundColor="rgb("+pos*3+",50,50)";
+      box.style.top = pos + "px"; 
+      box.style.left = pos + "px"; 
+    }
+  }
+  
+  function stopBox(){
+  clearInterval(id);
+}  
+ 
+var myVar;//=setInterval(myTimer, 1000);
+
+function myTimer() {
+  
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction() {
+  clearInterval(myVar);
+  document.getElementById("demo").innerHTML = "time has stopped";
+  }
+  function myStartFunction() {
+  myVar=setInterval(myTimer,1000);
+  }
+
+  
+
+</script>
+
+</body>
+</html>
