@@ -30,11 +30,7 @@ pic1=document.getElementById("img1");//the gun
 frameRate(30);
 bullAr.push(new bullets(xpos+40,500,5));//first bullet
 obj=document.getElementById("img5");//first moving picture
-//for(let j=0;j<10;j=j+1){
-	//objectAr[j]=obj.cloneNode(true);
-	//document.getElementById("bod1").appendChild(objectAr[j]);
-}//the cloned pictures.
-
+}
 function draw() {
 
 m.move();m.chbdd();//help paragraph

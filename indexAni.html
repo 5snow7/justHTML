@@ -23,8 +23,8 @@ body{background-color:blue;}
 <img id="pic1" src="cowpic1.jpg">
 <body>
  <br>
- <button onclick="myStopFunction()">Stop time</button>
-<button onclick="myStartFunction()">Start time</button>
+ <button onclick="myStopTimer()">Stop time</button>
+<button onclick="myStartTimer()">Start time</button>
 <br>
 <p id="demo"></p>
 <button onclick="startBox()">Start Box</button> 
@@ -75,11 +75,11 @@ function myTimer() {
   document.getElementById("demo").innerHTML = t;
 }
 
-function myStopFunction() {
+function myStopTimer() {
   clearInterval(myVar);
   document.getElementById("demo").innerHTML = "time has stopped";
   }
-  function myStartFunction() {
+  function myStartTimer() {
   myVar=setInterval(myTimer,1000);
   }
 
