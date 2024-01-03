@@ -12,7 +12,7 @@ document.getElementById("bod1").style.border = "10px double rgb("+picTotal*20+",
 }
 
 function moveto(ch1){
-	if (ch1=='a') {document.getElementById("snowAt").innerHTML="it connects";} 
+	if (ch1=='a') {document.getElementById("snowAt").innerHTML="it looksgood";} 
 	if(ch1=='c'){document.getElementById("par4").innerHTML="it works";}
 }
 
