@@ -10,7 +10,7 @@ this.y=this.y+this.ys;
 }	
 	
 chbdd(){
-if(this.x<-5||this.x>880){this.xs=-1*this.xs;}
+if(this.x<-5||this.x>860){this.xs=-1*this.xs;}
 if(this.y<-5||this.y>470){this.ys=-1*this.ys;}
 }	
 }
