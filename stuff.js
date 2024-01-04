@@ -1,4 +1,4 @@
-function rect(){
+function rect1(){
 rect(100,100,50,50);
 }
 
