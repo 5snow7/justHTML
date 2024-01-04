@@ -2,6 +2,10 @@ function rect1(){
 rect(100,100,50,50);
 }
 
+function rect2(){
+	rect(100,100,50,50);
+	}
+
 function addPic(){
 picChild[picTotal]=picParent.cloneNode(true);//cloned pictures 
 document.getElementById("bod1").appendChild(picChild[picTotal]);	
