@@ -29,4 +29,10 @@ display(){
 this.pB.style.left=this.x+"px";
 this.pB.style.top=this.y+"px";
 }	
+
+move2(){
+    this.x=2*this.x+this.xs;
+    this.y=this.y+this.ys;
+    }	
+
 }
